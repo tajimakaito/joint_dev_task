@@ -43,17 +43,21 @@ def q5
   array2 = [1, 5, 8, 10]
 
   # 以下に回答を記載
-  puts array1.size == 0
-  if array2.size >= 1
-    puts "false"
-  end
-  
+  puts array1.empty?
+  puts array2.empty?
+
 end
 
 def q6
   numbers1 = [1, 2, 3, 4, 5]
 
   # 以下に回答を記載
+  numbers2 = []
+  numbers1.each do |number1|
+    numbers2 << number1 * 10
+  end
+
+  p numbers2
 
 end
 
