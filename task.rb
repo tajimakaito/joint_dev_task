@@ -7,7 +7,6 @@ def q1
   # 以下に回答を記載
   names << "斎藤"
   puts names
-
 end
 
 def q2
@@ -17,7 +16,6 @@ def q2
   # 以下に回答を記載
   array = array1 + array2
   puts array
-
 end
 
 def q3
@@ -25,7 +23,6 @@ def q3
 
   # 以下に回答を記載
   puts numbers.count(3)
-
 end
 
 def q4
@@ -45,7 +42,6 @@ def q5
   # 以下に回答を記載
   puts array1.empty?
   puts array2.empty?
-
 end
 
 def q6
@@ -53,18 +49,16 @@ def q6
 
   # 以下に回答を記載
   numbers2 = []
-  numbers1.each do |number1|
-    numbers2 << number1 * 10
-  end
+  numbers1.map { |n1| numbers2 << n1 * 10 }
 
   p numbers2
-
 end
 
 def q7
   array = ["1", "2", "3", "4", "5"]
 
   # 以下に回答を記載
+  array.map! { |n| n.to_i }
 
   # 以下は変更しないで下さい
   p array
@@ -136,7 +130,7 @@ def q16
     { name: "satou", age: 22 },
     { name: "yamada", age: 12 },
     { name: "takahashi", age: 32 },
-    { name: "nakamura", age: 41 }
+    { name: "nakamura", age: 41 },
   ]
 
   # 以下に回答を記載
@@ -196,7 +190,6 @@ class Zoo
 
 end
 
-
 def q20
   # ここは変更しないで下さい（動物園・ユーザー情報は変更していただいてOKです）
   zoo = Zoo.new(name: "旭山動物園", entry_fee: { infant: 0, children: 400, adult: 800, senior: 500 })
@@ -205,7 +198,7 @@ def q20
     UserQ20.new(name: "たま", age: 3),
     UserQ20.new(name: "ゆたぼん", age: 10),
     UserQ20.new(name: "あじー", age: 32),
-    UserQ20.new(name: "ぎん", age: 108)
+    UserQ20.new(name: "ぎん", age: 108),
   ]
 
   users.each do |user|
