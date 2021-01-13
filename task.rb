@@ -152,7 +152,7 @@ def q16
 
   # 以下に回答を記載
   users.each { |user|
-    puts "私の名前は" + user[:name] + "です。年齢は" + user[:age].to_s + "歳です。"
+    puts "私の名前は#{user[:name]}です。年齢は#{user[:age].to_s}歳です。"
   }
 
 end
