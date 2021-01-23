@@ -160,8 +160,8 @@ end
 class UserQ17
   # 以下に回答を記載
   def initialize(name:, age:, gender:)
-    @name   = name
-    @age    = age
+    @name = name
+    @age = age
     @gender = gender
   end
 
@@ -188,11 +188,11 @@ class UserQ18
   # 以下に回答を記載
   def initialize(name:, age:)
     @name = name
-    @age  = age
+    @age = age
   end
 
   def introduce
-    if @age == 32
+    if @age >= 20
       "こんにちは，#{@name}と申します。宜しくお願いいたします。"
     else
       "はいさいまいど〜，#{@name}です！！！"
@@ -226,33 +226,31 @@ end
 
 class UserQ20
   # 以下に回答を記載
-  attr_reader :name
-  attr_reader :age
+  attr_reader :name, :age
 
   def initialize(name:, age:)
     @name = name
-    @age  = age
+    @age = age
   end
-
 end
 
 class Zoo
   # 以下に回答を記載
   def initialize(name:, entry_fee:)
-    @name       = name
-    @entry_fee  = entry_fee
+    @name = name
+    @entry_fee = entry_fee
   end
 
   def info_entry_fee(user)
-    case user.age
+    user_entry_fee = case user.age
     when 0..5
-      user_entry_fee = @entry_fee[:infant]
+      @entry_fee[:infant]
     when 6..12
-      user_entry_fee = @entry_fee[:children]
+      @entry_fee[:children]
     when 13..64
-      user_entry_fee = @entry_fee[:adult]
+      @entry_fee[:adult]
     when 65..120
-      user_entry_fee = @entry_fee[:senior]
+      @entry_fee[:senior]
     end
 
     puts "#{user.name}さんの入場料金は#{user_entry_fee}円です。" 
