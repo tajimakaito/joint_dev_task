@@ -6,11 +6,7 @@ def q1
 
   # 以下に回答を記載
   names << "斎藤"
-<<<<<<< HEAD
   p names
-=======
-  puts names
->>>>>>> 5d2e0703e141ee68796a9460fc5f00856c78c4e2
 end
 
 def q2
@@ -19,22 +15,14 @@ def q2
 
   # 以下に回答を記載
   array = array1 + array2
-<<<<<<< HEAD
   p array
-=======
-  puts array
->>>>>>> 5d2e0703e141ee68796a9460fc5f00856c78c4e2
 end
 
 def q3
   numbers = [1, 5, 8, 10, 2, 3, 2, 3, 3, 1, 4, 5, 9]
 
   # 以下に回答を記載
-<<<<<<< HEAD
   p numbers.count(3)
-=======
-  puts numbers.count(3)
->>>>>>> 5d2e0703e141ee68796a9460fc5f00856c78c4e2
 end
 
 def q4
@@ -42,10 +30,6 @@ def q4
 
   # 以下に回答を記載
   sports.compact!
-<<<<<<< HEAD
-=======
-
->>>>>>> 5d2e0703e141ee68796a9460fc5f00856c78c4e2
   # 以下は変更しないで下さい
   p sports
 end
@@ -55,25 +39,15 @@ def q5
   array2 = [1, 5, 8, 10]
 
   # 以下に回答を記載
-<<<<<<< HEAD
   p array1.empty?
   p array2.empty?
-=======
-  puts array1.empty?
-  puts array2.empty?
->>>>>>> 5d2e0703e141ee68796a9460fc5f00856c78c4e2
 end
 
 def q6
   numbers1 = [1, 2, 3, 4, 5]
 
   # 以下に回答を記載
-<<<<<<< HEAD
   numbers2 = numbers1.map{|n| n * 10}
-=======
-  numbers2 = numbers1.map { |n1| n1 * 10 }
-
->>>>>>> 5d2e0703e141ee68796a9460fc5f00856c78c4e2
   p numbers2
 end
 
@@ -82,10 +56,6 @@ def q7
 
   # 以下に回答を記載
   array.map!(&:to_i)
-<<<<<<< HEAD
-=======
-  
->>>>>>> 5d2e0703e141ee68796a9460fc5f00856c78c4e2
   # 以下は変更しないで下さい
   p array
 end
@@ -94,14 +64,8 @@ def q8
   programming_languages = %w(ruby php python javascript)
 
   # 以下に回答を記載
-<<<<<<< HEAD
   programming_languages.map(&:capitalize!)
   upper_case_programming_languages = programming_languages.map(&:upcase)
-=======
-  programming_languages.map!(&:capitalize)
-  upper_case_programming_languages = programming_languages.map(&:upcase)
-
->>>>>>> 5d2e0703e141ee68796a9460fc5f00856c78c4e2
   # 以下は変更しないで下さい
   p programming_languages
   p upper_case_programming_languages
@@ -121,15 +85,11 @@ def q10
 
   # 以下に回答を記載
   foods.each do |food|
-<<<<<<< HEAD
     if food.include?("うに")
       puts "好物です"
     else
       puts "まぁまぁ好きです"
     end
-=======
-    puts food.include?("うに") ? "好物です" : "まぁまぁ好きです"
->>>>>>> 5d2e0703e141ee68796a9460fc5f00856c78c4e2
   end
 end
 
@@ -139,28 +99,16 @@ def q11
   # 以下に回答を記載
   sports.flatten!.uniq!
   puts "ユーザーの趣味一覧"
-<<<<<<< HEAD
   sports.each.with_index(1) do |sport, i|
     puts "No#{i} #{sport}"
   end
-=======
-  sports.each.with_index(1) { |sport, i|
-  puts "No#{i} #{sport}"
-  }
-
->>>>>>> 5d2e0703e141ee68796a9460fc5f00856c78c4e2
 end
 
 def q12
   data = { user: { name: "satou", age: 33 } }
 
   # 以下に回答を記載
-<<<<<<< HEAD
   p data[:user][:name]
-=======
-  puts data.dig(:user, :name)
-
->>>>>>> 5d2e0703e141ee68796a9460fc5f00856c78c4e2
 end
 
 def q13
@@ -168,26 +116,14 @@ def q13
   update_data = { age: 32, address: "沖縄" }
 
   # 以下に回答を記載
-<<<<<<< HEAD
   p user_data.merge!(update_data)
-=======
-  user_data.merge!(update_data)
-  puts user_data
-
->>>>>>> 5d2e0703e141ee68796a9460fc5f00856c78c4e2
 end
 
 def q14
   data = { name: "satou", age: 33, address: "saitama", hobby: "soccer", email: "hoge@fuga.com" }
 
   # 以下に回答を記載
-<<<<<<< HEAD
   p data.keys
-=======
-  key_data = data.keys
-  p key_data
-
->>>>>>> 5d2e0703e141ee68796a9460fc5f00856c78c4e2
 end
 
 def q15
@@ -195,14 +131,8 @@ def q15
   data2 = { name: "yamada", hobby: "baseball", role: "normal" }
 
   # 以下に回答を記載
-<<<<<<< HEAD
   p data1.key?(:age) ? "OK" : "NG"
   p data2.key?(:age) ? "OK" : "NG"
-=======
-  p data1.has_key?(:age) ? "OK" : "NG"
-  p data2.has_key?(:age) ? "OK" : "NG"
-
->>>>>>> 5d2e0703e141ee68796a9460fc5f00856c78c4e2
 end
 
 def q16
@@ -210,25 +140,17 @@ def q16
     { name: "satou", age: 22 },
     { name: "yamada", age: 12 },
     { name: "takahashi", age: 32 },
-    { name: "nakamura", age: 41 },
+    { name: "nakamura", age: 41 }
   ]
 
   # 以下に回答を記載
-<<<<<<< HEAD
   users.each do |user|
     puts "私の名前は#{user[:name]}です。年齢は#{user[:age]}です。"
   end
-=======
-  users.each { |user|
-    puts " 私の名前は#{user[:name]}です。年齢は#{user[:age]}歳です。"
-  }
-
->>>>>>> 5d2e0703e141ee68796a9460fc5f00856c78c4e2
 end
 
 class UserQ17
   # 以下に回答を記載
-<<<<<<< HEAD
   attr_reader :name, :age, :gender
 
   def initialize(**params)
@@ -242,19 +164,6 @@ class UserQ17
     名前:#{@name}
     年齢:#{@age}
     性別:#{@gender}
-=======
-  def initialize(name:, age:, gender:)
-    @name = name
-    @age = age
-    @gender = gender
-  end
-
-  def info
-    puts <<~TEXT
-      名前:#{@name}
-      年齢:#{@age}
-      性別:#{@gender}
->>>>>>> 5d2e0703e141ee68796a9460fc5f00856c78c4e2
     TEXT
   end
 end
@@ -271,16 +180,10 @@ end
 
 class UserQ18
   # 以下に回答を記載
-<<<<<<< HEAD
   attr_reader :name,:age
   def initialize(**params)
     @name = params[:name]
     @age = params[:age]
-=======
-  def initialize(name:, age:)
-    @name = name
-    @age = age
->>>>>>> 5d2e0703e141ee68796a9460fc5f00856c78c4e2
   end
 
   def introduce
@@ -304,10 +207,6 @@ end
 class Item
   # 以下を修正して下さい
   attr_reader :name
-<<<<<<< HEAD
-=======
-
->>>>>>> 5d2e0703e141ee68796a9460fc5f00856c78c4e2
   def initialize(name:)
     @name = name
   end
@@ -322,22 +221,14 @@ end
 class UserQ20
   # 以下に回答を記載
   attr_reader :name, :age
-<<<<<<< HEAD
   def initialize(**params)
     @name = params[:name]
     @age = params[:age]
-=======
-
-  def initialize(name:, age:)
-    @name = name
-    @age = age
->>>>>>> 5d2e0703e141ee68796a9460fc5f00856c78c4e2
   end
 end
 
 class Zoo
   # 以下に回答を記載
-<<<<<<< HEAD
   attr_reader :name, :entry_fee
   def initialize(**params)
     @name = params[:name]
@@ -356,28 +247,10 @@ class Zoo
       @entry_fee[:senior]
     end
     puts "#{user.name}さんの入場料金は#{user_entry_fee}円です。"
-=======
-  def initialize(name:, entry_fee:)
-    @name = name
-    @entry_fee = entry_fee
->>>>>>> 5d2e0703e141ee68796a9460fc5f00856c78c4e2
   end
 
-  def info_entry_fee(user)
-    user_entry_fee = case user.age
-    when 0..5
-      @entry_fee[:infant]
-    when 6..12
-      @entry_fee[:children]
-    when 13..64
-      @entry_fee[:adult]
-    when 65..120
-      @entry_fee[:senior]
-    end
-
-    puts "#{user.name}さんの入場料金は#{user_entry_fee}円です。" 
-  end
 end
+
 
 def q20
   # ここは変更しないで下さい（動物園・ユーザー情報は変更していただいてOKです）
@@ -387,7 +260,7 @@ def q20
     UserQ20.new(name: "たま", age: 3),
     UserQ20.new(name: "ゆたぼん", age: 10),
     UserQ20.new(name: "あじー", age: 32),
-    UserQ20.new(name: "ぎん", age: 108),
+    UserQ20.new(name: "ぎん", age: 108)
   ]
 
   users.each do |user|
