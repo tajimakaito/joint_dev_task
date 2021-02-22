@@ -151,8 +151,6 @@ end
 
 class UserQ17
   # 以下に回答を記載
-  attr_reader :name, :age, :gender
-
   def initialize(**params)
     @name = params[:name]
     @age = params[:age]
@@ -180,7 +178,6 @@ end
 
 class UserQ18
   # 以下に回答を記載
-  attr_reader :name,:age
   def initialize(**params)
     @name = params[:name]
     @age = params[:age]
